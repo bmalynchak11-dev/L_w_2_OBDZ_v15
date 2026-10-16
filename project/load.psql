@@ -1,3 +1,6 @@
--- Команди \copy виконуються по одній на рядок у порядку: спершу батьківські таблиці, потім дочірні.
--- Приклад (замініть на свої таблиці):
--- \copy plan FROM 'data/plan.csv' WITH (FORMAT csv, HEADER true)
+\copy "user" FROM 'data/user.csv' WITH (FORMAT csv, HEADER true);
+\copy "category" FROM 'data/category.csv' WITH (FORMAT csv, HEADER true);
+\copy "wallet" FROM 'data/wallet.csv' WITH (FORMAT csv, HEADER true);
+\copy "budget" FROM 'data/budget.csv' WITH (FORMAT csv, HEADER true);
+\copy "transaction" FROM 'data/transaction.csv' WITH (FORMAT csv, HEADER true);
+\copy "audit_log" FROM 'data/audit_log.csv' WITH (FORMAT csv, HEADER true);
